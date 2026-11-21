@@ -19,18 +19,22 @@
   <li>Your settings, paused sites, allowed sites, custom filters and zapped elements, saved in Chrome's local extension storage.</li>
   <li>Blocked-request counters (numbers only, no web addresses).</li>
   <li>If you turn on <b>Sync</b>, your settings (not your browsing) are stored in your own Google account through Chrome Sync so they appear on your other computers. You can turn it off at any time.</li>
+  <li><b>Delete cookies on close:</b> for sites you choose, Kavach deletes that site's cookies and stored data when you close its last tab. This happens on your device only.</li>
+  <li><b>Request logger:</b> shows requests for one tab only while the logger window is open. Nothing is recorded or saved after you close it.</li>
 </ul>
 
 <h2>Network requests the extension makes</h2>
 <ul>
   <li>When you add a filter list, and every 4 days to keep it current, the extension downloads that list from the address you chose. You can turn automatic updates off.</li>
   <li>The "Report broken site" button opens a pre-filled GitHub issue page in a new tab. It contains only the site name, extension version, your enabled settings and browser version. Nothing is sent unless you submit it yourself.</li>
+  <li><b>SponsorBlock (off by default):</b> if you turn it on, Kavach sends only the first 4 characters of a scrambled (SHA-256) YouTube video ID to sponsor.ajay.app to fetch skip times. Your identity and the actual video are not revealed.</li>
 </ul>
 
 <h2>Why Chrome shows permission warnings</h2>
 <ul>
   <li><b>Read and change data on all websites:</b> needed to block ads, hide ad elements, skip video ads and stop pop-ups on every site.</li>
   <li><b>Read your browsing history:</b> required by Chrome for the blocked-request counter and for closing ad pop-up tabs. This information is processed only in memory and is never saved or sent.</li>
+  <li><b>Change your privacy-related settings</b> (asked only if you turn on WebRTC protection): used to stop WebRTC from revealing your IP address.</li>
 </ul>
 
 <h2>Acceptable ads</h2>
